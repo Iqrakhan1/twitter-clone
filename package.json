@@ -1,0 +1,27 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iqrakhan1/twitter-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iqrakhan1/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/Iqrakhan1/twitter-clone#readme",
+  "description": "",
+  "dependencies": {
+    "twitter-clone": "file:"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

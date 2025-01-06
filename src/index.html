@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/output.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+    <title>Twitter Clone</title>
+</head>
+
+<body class="bg-black text-white w-full ">
+    <main class="container flex justify-center px-28">
+        <!-- first section -->
+        <div class="left-sidebar w-1/4 p-4 sticky top-1">
+            <div class="logo h-6 w-6 ml-3">
+
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512 462.799">
+                    <path fill="#fff" fill-rule="nonzero"
+                        d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                </svg>
+            </div>
+            <div class="side_bar pr-16">
+                <ul class="mt-5 text-xl">
+
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span><span class="font-bold">Home</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined ">
+                            search
+                        </span><span>Explore</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined ">
+                            notifications
+                        </span><span>Notifications</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined ">
+                            mail
+                        </span><span>messages</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined">
+                            monitoring
+                        </span><span>Gork</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined ">
+                            groups
+                        </span><span>communities</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <div class=" h-4 w-4">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799">
+                                <path fill="#fff" fill-rule="nonzero"
+                                    d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                            </svg>
+                        </div><span>Premuim</span>
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <span>Profile</span>
+
+                    </li>
+                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                        <span class="material-symbols-outlined p-1 flex justify-center rounded-full outline">
+                            more_horiz
+                        </span><span>More</span>
+                    </li>
+                    <li class="w-full bg-white text-black text-center mt-5 p-2 rounded-full font-semibold">
+                        <button>Post</button>
+                    </li>
+
+                </ul>
+            </div>
+            <div
+                class="profile mt-14 flex gap-3 items-center justify-center cursor-pointer p-2 pl-4 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                <img class="rounded-full h-10 w-10"
+                    src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg" alt="Iqra khan">
+                <div>
+
+                    <span class="">Iqra Khan</span>
+                    <span class=" text-sm text-gray-700">@ik22082002khan</span>
+                </div>
+                <span class="text-lg ">•••</span>
+            </div>
+
+        </div>
+        <!-- second section -->
+        <div class="feed-Section w-2/4 border border-x-gray-700 border-y-0">
+            second section
+        </div>
+        <!-- third section -->
+        <div class="right-Section w-1/4 sticky top-1  m-3 ">
+            <div class="searchbar rounded-full  mb-3 flex justify-center items-center gap-3 p-1 bg-[#e7e9ea1a]">
+                <span class="material-symbols-outlined text-gray-400 text-center">
+                    search
+                </span>
+                <input type="text" placeholder="Search"
+                    class="text-lg outline-none bg-transparent text-white placeholder-gray-400" />
+            </div>
+            <div class="premium border border-gray-600 rounded-lg p-3 pr-10">
+                <h2 class="text-lg font-bold">Try Premium for free today</h2>
+                <p class="my-3 text-[14px]">
+
+                    Upgrade your experience with less ads, power tools, and more with Premium.
+                </P>
+                <div class=" bg-white text-black w-fit px-4 py-2 rounded-full font-bold text-sm">
+                    <button>Start free 14-day trial</button>
+                </div>
+
+            </div>
+            <div class="premium mt-3 border border-gray-600 rounded-lg p-3 pr-10">
+                <h2 class="text-lg font-bold">
+                    What’s happening</h2>
+                <p class="my-3 text-[14px]">
+
+                    Upgrade your experience with less ads, power tools, and more with Premium.
+                </P>
+                <div class=" bg-white text-black w-fit px-4 py-2 rounded-full font-bold text-sm">
+                    <button>Start free 14-day trial</button>
+                </div>
+
+            </div>
+            <div class="premium border border-gray-600 rounded-lg p-3 pr-10 mt-7">
+                <h2 class="text-lg font-bold">
+                    Who to follow</h2>
+                <div class="mt-4">
+
+
+                    <div
+                        class="profile mt-2 flex gap-3 items-center justify-center cursor-pointer p-2 pl-4 pr-7 rounded-full  w-fit">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg"
+                            alt="Iqra khan">
+                        <div>
+
+                            <span class="text-sm">Iqra Khan</span>
+                            <span class=" text-sm text-gray-700">@ik22082002khan</span>
+                        </div>
+                        <div class=" bg-white text-black w-fit px-5 py-1.5 rounded-full font-bold text-sm ml-4">
+                            <button>follow</button>
+                        </div>
+                    </div>
+                    <div
+                        class="profile mt-2 flex gap-3 items-center justify-center cursor-pointer p-2 pl-4 pr-7 rounded-full  w-fit">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg"
+                            alt="Iqra khan">
+                        <div>
+
+                            <span class="text-sm">Iqra Khan</span>
+                            <span class=" text-sm text-gray-700">@ik22082002khan</span>
+                        </div>
+                        <div class=" bg-white text-black w-fit px-5 py-1.5 rounded-full font-bold text-sm ml-4">
+                            <button>follow</button>
+                        </div>
+                    </div>
+                    <div
+                        class="profile mt-2 flex gap-3 items-center justify-center cursor-pointer p-2 pl-4 pr-7 rounded-full  w-fit">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg"
+                            alt="Iqra khan">
+                        <div>
+
+                            <span class="text-sm">Iqra Khan</span>
+                            <span class=" text-sm text-gray-700">@ik22082002khan</span>
+                        </div>
+                        <div class=" bg-white text-black w-fit px-5 py-1.5 rounded-full font-bold text-sm ml-4">
+                            <button>follow</button>
+                        </div>
+                    </div>
+                    <div class="text-blue-500">see more</div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>
