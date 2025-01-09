@@ -25,94 +25,114 @@
 </head>
 
 <body class="bg-black text-white w-full">
-    <main class="container flex justify-center px-28">
+    <main class="container flex md:justify-center md:px-28">
         <!-- first section -->
-        <div class="left-sidebar w-1.5/4  mt-1 sticky top-0">
-            <div class="logo h-12 w-12 hover:bg-[#e7e9ea1a] p-3 rounded-full cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
-                    clip-rule="evenodd" viewBox="0 0 512 462.799">
-                    <path fill="#fff" fill-rule="nonzero"
-                        d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
-                </svg>
-            </div>
-            <div class="side_bar pr-16">
-                <ul class="mt-3 text-xl">
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> home </span><span
-                            class="font-bold ">Home</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> search </span><span>Explore</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> notifications
-                        </span><span>Notifications</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> mail </span><span>messages</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> monitoring </span><span>Gork</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> groups </span><span>communities</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <div class="h-4 w-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
-                                text-rendering="geometricPrecision" image-rendering="optimizeQuality"
-                                fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799">
-                                <path fill="#fff" fill-rule="nonzero"
-                                    d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
-                            </svg>
-                        </div>
-                        <span>Premuim</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined icon-size"> person </span>
-                        <span>Profile</span>
-                    </li>
-                    <li class="flex gap-3 items-center cursor-pointer p-2 pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                        <span class="material-symbols-outlined p-1 flex justify-center rounded-full outline">
-                            more_horiz </span>
-                        <span>More</span>
-                    </li>
-                    <li class="w-full bg-white text-black text-center m-5 p-2 rounded-full font-semibold">
-                        <button>Post</button>
-                    </li>
-                </ul>
-            </div>
-            <div
-                class="profile mt-14 flex gap-3 items-center justify-center cursor-pointer p-2 pl-4 pr-5 rounded-full hover:bg-[#e7e9ea1a] w-fit">
-                <img class="rounded-full h-10 w-10"
-                    src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg"
-                    alt="Iqra khan" />
-                <div>
-                    <span class="">Iqra Khan</span>
-                    <span class="text-sm text-gray-700">@ik22082002khan</span>
+        <div class="relative">
+            <div class="left-sidebar w-1.5/4  mt-1 sticky top-0 max-sm:hidden ">
+                <div class="logo h-12 w-12 hover:bg-[#e7e9ea1a] p-3 rounded-full cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                        clip-rule="evenodd" viewBox="0 0 512 462.799">
+                        <path fill="#fff" fill-rule="nonzero"
+                            d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                    </svg>
                 </div>
-                <span class="text-lg ">•••</span>
+                <div class="side_bar lg:pr-16">
+                    <ul class="mt-3 text-xl">
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> home </span><span
+                                class="font-bold hidden lg:block">Home</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> search </span><span
+                                class="hidden lg:block">Explore</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> notifications
+                            </span><span class="hidden lg:block">Notifications</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> mail </span><span
+                                class="hidden lg:block">messages</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> monitoring </span><span
+                                class="hidden lg:block">Gork</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> groups </span><span
+                                class="hidden lg:block">communities</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <div class="h-4 w-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                                    text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+                                    fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799">
+                                    <path fill="#fff" fill-rule="nonzero"
+                                        d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                                </svg>
+                            </div>
+                            <span class="hidden lg:block">Premuim</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined icon-size"> person </span>
+                            <span class="hidden lg:block">Profile</span>
+                        </li>
+                        <li
+                            class="flex gap-3 items-center cursor-pointer p-2 lg:pr-7 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                            <span class="material-symbols-outlined p-1 flex justify-center rounded-full outline">
+                                more_horiz </span>
+                            <span class="hidden lg:block">More</span>
+                        </li>
+                        <li
+                            class="w-80% hidden lg:block  bg-white text-black text-center m-5 p-2 rounded-full font-semibold">
+                            <button class=" ">Post</button>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="profile mt-14 flex gap-3 items-center justify-center cursor-pointer p-2 lg:pl-4 lg:pr-5 rounded-full hover:bg-[#e7e9ea1a] w-fit">
+                    <img class="rounded-full h-10 w-10"
+                        src="https://pbs.twimg.com/profile_images/1443451942672355333/U2Pa_66q_bigger.jpg"
+                        alt="Iqra khan" />
+                    <div class="hidden lg:block">
+                        <span class="">Iqra Khan</span>
+                        <span class="text-sm text-gray-700">@ik22082002khan</span>
+                    </div>
+                    <span class="text-lg hidden lg:block">•••</span>
+                </div>
             </div>
         </div>
         <!-- second section -->
-        <div class="feed-Section w-2/4 border border-x-gray-700 border-y-0 relative">
-            <div class="header">
-                <ul
-                    class="flex justify-between font-semibold text-gray-700 sticky top-0 border-b-2 border-gray-700 z-10 cursor-pointer">
-                    <li>
-                        <div class="hover:bg-[#e7e9ea1a] pt-2 px-10 text-white">
-                            For You
-                            <div class=" bg-[#1d9bf0] h-1 rounded-sm mx-auto mt-2  mb-0"></div>
-                        </div>
+        <div class="feed-Section lg:w-2/4 border border-x-gray-700 border-y-0">
+            <div class="relative">
 
-                    </li>
-                    <li class="hover:bg-[#e7e9ea1a] pt-2 px-10">Following</li>
+                <div class="header  sticky top-0">
+                    <ul
+                        class="flex justify-between font-semibold text-gray-700 border-b-2 border-gray-700 z-10 cursor-pointer">
+                        <li>
+                            <div class="hover:bg-[#e7e9ea1a] pt-2 md:px-10 px-2 text-white">
+                                For You
+                                <div class=" bg-[#1d9bf0] h-1 rounded-sm mx-auto mt-2  mb-0"></div>
+                            </div>
 
-                    <li class="hover:bg-[#e7e9ea1a] pt-2 px-10">React</li>
-                    <li class="hover:bg-[#e7e9ea1a] pt-2 px-10">Community</li>
-                </ul>
+                        </li>
+                        <li class="hover:bg-[#e7e9ea1a] pt-2 md:px-10 px-2">Following</li>
+
+                        <li class="hover:bg-[#e7e9ea1a] pt-2 md:px-10 px-2">React</li>
+                        <li class="hover:bg-[#e7e9ea1a] pt-2 md:px-10 px-2">Community</li>
+                    </ul>
+                </div>
             </div>
+
             <div class="posts border-b-2 border-gray-700">
                 <div class="postedit m-4 mb-0 flex gap-4 items-center">
                     <img class="rounded-full h-10 w-10"
@@ -710,131 +730,134 @@
         </div>
 
         <!-- third section -->
-        <div class="right-Section w-1/4 sticky top-1 m-3">
-            <div class="searchbar rounded-full mb-3 flex justify-center items-center gap-3 p-1 bg-[#e7e9ea1a]">
-                <span class="material-symbols-outlined text-gray-400 text-center">
-                    search
-                </span>
-                <input type="text" placeholder="Search"
-                    class="text-lg outline-none bg-transparent text-white placeholder-gray-400" />
-            </div>
-            <div class="premium border border-gray-600 rounded-lg p-3 pr-10">
-                <h2 class="text-lg font-bold">Try Premium for free today</h2>
-                <p class="my-3 text-[14px]">
-                    Upgrade your experience with less ads, power tools, and more with
-                    Premium.
-                </p>
-                <div class="bg-white text-black w-fit px-4 py-2 rounded-full font-bold text-sm">
-                    <button>Start free 14-day trial</button>
+
+        <div class="right-Section w-1/4  m-3 hidden lg:block">
+            <div class="relativeas">
+                <div class="searchbar rounded-full mb-3 flex justify-center items-center gap-3 p-1 bg-[#e7e9ea1a]">
+                    <span class="material-symbols-outlined text-gray-400 text-center">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search"
+                        class="text-lg outline-none bg-transparent text-white placeholder-gray-400" />
                 </div>
-            </div>
-            <div class="premium mt-3 border border-gray-600 rounded-lg p-2 cursor-pointer">
-                <h2 class="text-lg font-bold">What’s happening</h2>
-                <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
-                    <div>
-                        <span class="font-semibold text-sm"> #SkyForceTrailer </span>
-                        <p class="text-xs font-semibold text-gray-600">
-                            Relive the untold story of India's deadliest airstrike.
-                        </p>
+                <div class="premium border border-gray-600 rounded-lg p-3 pr-10">
+                    <h2 class="text-lg font-bold">Try Premium for free today</h2>
+                    <p class="my-3 text-[14px]">
+                        Upgrade your experience with less ads, power tools, and more with
+                        Premium.
+                    </p>
+                    <div class="bg-white text-black w-fit px-4 py-2 rounded-full font-bold text-sm">
+                        <button>Start free 14-day trial</button>
                     </div>
-                    <div class="text-3xl text-gray-700">···</div>
                 </div>
-                <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
-                    <div>
-                        <p class="text-xs font-semibold text-gray-600">
-                            Business & finance · Trending
-                        </p>
-                        <h2 class="text-sm font-bold">#lockdown</h2>
-                    </div>
-                    <div class="text-3xl text-gray-700">···</div>
-                </div>
-                <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
-                    <div>
-                        <p class="text-xs font-semibold text-gray-600">
-                            Entertainment · Trending
-                        </p>
-                        <h2 class="text-sm font-bold">#GoodBadUgly</h2>
-                        <p class="text-xs font-semibold text-gray-600">39.4K posts</p>
-                    </div>
-                    <div class="text-3xl text-gray-700">···</div>
-                </div>
-                <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
-                    <div>
-                        <p class="text-xs font-semibold text-gray-600">
-                            Business & finance · Trending
-                        </p>
-                        <h2 class="text-sm font-bold">Human Metapneumovirus</h2>
-                        <p class="text-xs font-semibold text-gray-600">12.8K posts</p>
-                    </div>
-                    <div class="text-3xl text-gray-700">···</div>
-                </div>
-                <div class="text-[#1d9bf0] text-sm mt-1 hover:bg-neutral-950 p-2 rounded-lg">
-                    show more
-                </div>
-            </div>
-            <div class="premium border border-gray-600 rounded-lg p-3 mt-7">
-                <h2 class="text-lg font-bold">Who to follow</h2>
-                <div class="mt-4">
-                    <div class="flex justify-between items-center p-2">
-                        <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
-                            <img class="h-8 w-8"
-                                src="https://pbs.twimg.com/profile_images/1455341411176353792/dA_QKgdh_200x200.jpg"
-                                alt="Iqra khan" />
-                            <div>
-                                <span class="text-sm hover:underline">Adobe Creative Cloud</span>
-                                <span class="text-sm text-gray-700">@creativecloud</span>
-                            </div>
+                <div class="premium mt-3 border border-gray-600 rounded-lg p-2 cursor-pointer">
+                    <h2 class="text-lg font-bold">What’s happening</h2>
+                    <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
+                        <div>
+                            <span class="font-semibold text-sm"> #SkyForceTrailer </span>
+                            <p class="text-xs font-semibold text-gray-600">
+                                Relive the untold story of India's deadliest airstrike.
+                            </p>
                         </div>
-                        <div class="bg-white text-black px-5 py-1.5 h-8 rounded-full font-bold text-sm">
-                            <button>follow</button>
-                        </div>
+                        <div class="text-3xl text-gray-700">···</div>
                     </div>
-                    <div class="flex justify-between items-center p-2">
-                        <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
-                            <img class="h-8 w-8"
-                                src="https://pbs.twimg.com/profile_images/1701324249624150016/tcox7Ax3_bigger.jpg"
-                                alt="profile img" />
-                            <div>
-                                <span class="text-sm hover:underline">Microsoft</span>
-                                <span class="text-sm text-gray-700">@Microsoft</span>
+                    <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-600">
+                                Business & finance · Trending
+                            </p>
+                            <h2 class="text-sm font-bold">#lockdown</h2>
+                        </div>
+                        <div class="text-3xl text-gray-700">···</div>
+                    </div>
+                    <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-600">
+                                Entertainment · Trending
+                            </p>
+                            <h2 class="text-sm font-bold">#GoodBadUgly</h2>
+                            <p class="text-xs font-semibold text-gray-600">39.4K posts</p>
+                        </div>
+                        <div class="text-3xl text-gray-700">···</div>
+                    </div>
+                    <div class="mt-3 flex justify-between hover:bg-neutral-950 p-2 rounded-lg">
+                        <div>
+                            <p class="text-xs font-semibold text-gray-600">
+                                Business & finance · Trending
+                            </p>
+                            <h2 class="text-sm font-bold">Human Metapneumovirus</h2>
+                            <p class="text-xs font-semibold text-gray-600">12.8K posts</p>
+                        </div>
+                        <div class="text-3xl text-gray-700">···</div>
+                    </div>
+                    <div class="text-[#1d9bf0] text-sm mt-1 hover:bg-neutral-950 p-2 rounded-lg">
+                        show more
+                    </div>
+                </div>
+                <div class="premium border border-gray-600 rounded-lg p-3 mt-7">
+                    <h2 class="text-lg font-bold">Who to follow</h2>
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center p-2">
+                            <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
+                                <img class="h-8 w-8"
+                                    src="https://pbs.twimg.com/profile_images/1455341411176353792/dA_QKgdh_200x200.jpg"
+                                    alt="Iqra khan" />
+                                <div>
+                                    <span class="text-sm hover:underline">Adobe Creative Cloud</span>
+                                    <span class="text-sm text-gray-700">@creativecloud</span>
+                                </div>
                             </div>
                             <div class="bg-white text-black px-5 py-1.5 h-8 rounded-full font-bold text-sm">
                                 <button>follow</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex justify-between items-center p-2">
-                        <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
-                            <img class="h-8 w-8"
-                                src="https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_bigger.png"
-                                alt="profile image" />
-                            <div>
-                                <span class="text-sm hover:underline">MongoDB</span>
-                                <span class="text-sm text-gray-700">@MongoDB</span>
+                        <div class="flex justify-between items-center p-2">
+                            <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
+                                <img class="h-8 w-8"
+                                    src="https://pbs.twimg.com/profile_images/1701324249624150016/tcox7Ax3_bigger.jpg"
+                                    alt="profile img" />
+                                <div>
+                                    <span class="text-sm hover:underline">Microsoft</span>
+                                    <span class="text-sm text-gray-700">@Microsoft</span>
+                                </div>
+                                <div class="bg-white text-black px-5 py-1.5 h-8 rounded-full font-bold text-sm">
+                                    <button>follow</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="bg-white text-black px-5 py-1.5 h-8 rounded-full font-bold text-sm">
-                            <button>follow</button>
+                        <div class="flex justify-between items-center p-2">
+                            <div class="profile flex gap-3 cursor-pointer rounded-full w-full">
+                                <img class="h-8 w-8"
+                                    src="https://pbs.twimg.com/profile_images/1452637606559326217/GFz_P-5e_bigger.png"
+                                    alt="profile image" />
+                                <div>
+                                    <span class="text-sm hover:underline">MongoDB</span>
+                                    <span class="text-sm text-gray-700">@MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="bg-white text-black px-5 py-1.5 h-8 rounded-full font-bold text-sm">
+                                <button>follow</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-[#1d9bf0]">show more</div>
                         </div>
                     </div>
-                    <div>
-                        <div class="text-[#1d9bf0]">show more</div>
-                    </div>
                 </div>
-            </div>
-            <div class="mt-5 ml-3 mb-16 ">
-                <div class="text-gray-600 text-xs font-semibold  ">
-                    <span class="hover:underline  mr-2">
+                <div class="mt-5 ml-3 mb-16 ">
+                    <div class="text-gray-600 text-xs font-semibold  ">
+                        <span class="hover:underline  mr-2">
 
-                        Terms of Service
-                    </span>
-                    <span class="hover:underline  mr-2"> Privacy Policy</span>
-                    <span class="hover:underline  mr-2">Cookie Policy</span>
-                    <span class="hover:underline  mr-2">Accessibility</span>
-                    <span class="hover:underline  mr-2">Ads info</span>
+                            Terms of Service
+                        </span>
+                        <span class="hover:underline  mr-2"> Privacy Policy</span>
+                        <span class="hover:underline  mr-2">Cookie Policy</span>
+                        <span class="hover:underline  mr-2">Accessibility</span>
+                        <span class="hover:underline  mr-2">Ads info</span>
 
-                    <span class="hover:underline  mr-2"> More...</span>
-                    © 2025 X Corp.
+                        <span class="hover:underline  mr-2"> More...</span>
+                        © 2025 X Corp.
+                    </div>
                 </div>
             </div>
         </div>
